@@ -44,5 +44,9 @@ public class SshApi {
 		String result = sshServerImpl.getSsh(ip, user, pass, command);
 		return result;
 	}
-
+	@GetMapping(value = "/tooltest")
+	public String getSshApi2() {
+		log.info("tooltest");
+		return "aaaaccbbdd";
+	}
 }

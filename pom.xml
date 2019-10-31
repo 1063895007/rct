@@ -68,6 +68,14 @@
 			<artifactId>ganymed-ssh2-build210</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<!-- devtools的坐标 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>2.0.1.RELEASE</version>
+			<optional>true</optional>
+		</dependency>
+
 	</dependencies>
 	<!-- 注意： 这里必须要添加， 否者各种依赖有问题 -->
 	<repositories>
@@ -85,6 +93,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+					<addResources>true</addResources>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
