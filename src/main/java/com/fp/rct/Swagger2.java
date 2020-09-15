@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2 {
 	public static final String SWAGGER_SCAN_BASE_PACKAGE = "com.fp.rct";
 	public static final String VERSION = "1.0.0";
-	//bb
+	//cc
 	@Bean
 	public Docket CreateRestApi() {
 		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
